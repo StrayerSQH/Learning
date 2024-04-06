@@ -3,3 +3,4 @@
 有向无环图(DAG）是有节点和单向箭头组成的。\
 \
 每一个节点表示一个变量，“有向”是指以单向箭头表示变量之间的因果关系，“无环”是指无法从某一个节点出发沿着箭头方向回到原节点，形成一个闭环。
+![image](https://github.com/StrayerSQH/Learning/blob/main/%E7%AE%97%E6%B3%95/PHOTO/DAG_0.png)
