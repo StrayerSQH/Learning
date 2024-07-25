@@ -110,7 +110,7 @@ pip3.7.5 --version
 应该能看到以下结果：
 ![pip查看python版本](https://github.com/StrayerSQH/stochastic-search/blob/main/%E5%85%B6%E4%BB%96%E6%94%AF%E6%8C%81%E6%9D%90%E6%96%99/%E5%8D%8E%E4%B8%BAAtlas%20200%20dk/Pip%E6%9F%A5%E7%9C%8BPython%E7%89%88%E6%9C%AC.jpg)
 到这里，Python包就安装好啦！！！<br>
-如果还向安装一些其他的库的话，可以参照![其可能遇到的困难](https://github.com/StrayerSQH/stochastic-search/edit/main/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/%E5%85%B6%E4%BB%96%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E5%9B%B0%E9%9A%BE.md)中的**3.Linux中的pip3指令安装Python库（同样适用于Atlas）**和**4.Atlas中关于python2 | pip | python3.6 | python3.7和pip3之间的关系以及环境配装**中的方式进行解决。
+如果还向安装一些其他的库的话，可以参照![其可能遇到的困难](https://github.com/StrayerSQH/Learning/blob/main/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%8D%8E%E4%B8%BAAtlas200dk/%E5%85%B6%E4%BB%96%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E5%9B%B0%E9%9A%BE.md)中的**3.Linux中的pip3指令安装Python库（同样适用于Atlas）**和**4.Atlas中关于python2 | pip | python3.6 | python3.7和pip3之间的关系以及环境配装**中的方式进行解决。
 
 #### VS Code安装及ssh连接
 VS Code可以直接从Ubuntu的商店中下载，非常方便。下载好后打开VS Code,在扩展处搜索`remote-ssh`扩展包点击安装就行。随后在最左下角的一个类似于这样的符号`><`的地方点一下，将Atals主机的名字：`HwHiAiUser@192.168.1.2`输入进去，随后输入密码：`Mind@123`并回车就行。
