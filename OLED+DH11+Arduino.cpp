@@ -2,11 +2,12 @@
 #include <U8g2lib.h>
 
 //配置构造函数
-U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, SCL, SDA);
+U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, 11, 10);
 
-#define DHT11PIN 7
+#define DHT11PIN 9
 
 DHT dht(DHT11PIN, DHT11);
+
 
 void setup() {
   // put your setup code here, to run once:
@@ -20,7 +21,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  delay(100);
+  delay(1000);
 
   float h = dht.readHumidity();
   float t = dht.readTemperature();
@@ -30,13 +31,13 @@ void loop() {
   OLEDShow(h, t, f);
   
   // Serial.print(F("Humidity: "));
-  // Serial.print(h);
+  //Serial.print(h);
   // Serial.print(F("%  Temperature: "));
   // Serial.print(t);
   // Serial.print(F("°C "));
   // Serial.print(f);
   // Serial.print(F("°F"));
-  // Serial.print("\n");
+  //Serial.print("\n");
 }
 
 void OLEDShow(float h, float t, float f){
