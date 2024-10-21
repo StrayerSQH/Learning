@@ -61,21 +61,21 @@ int main(void)
 {
     SYSCFG_DL_init();
 
-    //³õÊ¼»¯ADC
+    //åˆå§‹åŒ–ADC
     NVIC_EnableIRQ(LIGHTSENSORS_INST_INT_IRQN);
 
-    //³õÊ¼»¯PWM²¨
+    //åˆå§‹åŒ–PWMæ³¢
     DL_TimerG_startCounter(PWM_INST);
-    //³õÊ¼»¯µç»ú±àÂëÆ÷·µ»Ø²¨
+    //åˆå§‹åŒ–ç”µæœºç¼–ç å™¨è¿”å›žæ³¢
     DL_TimerG_startCounter(CAPTURE_E1A_PWM_INST);
 
-    //³õÊ¼»¯×´Ì¬µÆ¡¢AIN¡¢BINÖµ£¬Ê¹×óÓÒÂÖÇ°½ø
+    //åˆå§‹åŒ–çŠ¶æ€ç¯ã€AINã€BINå€¼ï¼Œä½¿å·¦å³è½®å‰è¿›
     DL_GPIO_setPins(ABIN_PIN_AIN1_PIN_PORT, ABIN_PIN_AIN1_PIN_PIN);
     DL_GPIO_clearPins(ABIN_PIN_AIN2_PIN_PORT, ABIN_PIN_AIN2_PIN_PIN);
     DL_GPIO_setPins(ABIN_PIN_BIN1_PIN_PORT, ABIN_PIN_BIN1_PIN_PIN);
     DL_GPIO_clearPins(ABIN_PIN_BIN2_PIN_PORT, ABIN_PIN_BIN2_PIN_PIN);
 
-    //¶¨Òå±äÁ¿
+    //å®šä¹‰å˜é‡
     int lightNum = 0;
 
     while (1) 
