@@ -296,7 +296,7 @@ int main()
     //创建拓补图，安排每学期的课程
     Graph courseGraph(eachCourseInformationGeneralList.GetTotalCourseTypeNum());
     CourseInformation* eachCourseInformationGeneralListCurrent = eachCourseInformationGeneralList.head;
-    while (eachCourseInformationGeneralListCurrent != NULL)
+    while (eachCourseInformationGeneralListCurrent->next != NULL)
     {
         courseGraph.AddCourse(eachCourseInformationGeneralListCurrent);
 
